@@ -50,6 +50,28 @@
 
 
 
+### FFMpeg
+
+#### 显示输入设备
+
+`ffmpeg -list_devices true -f dshow -i dummy`
+
+dummy参数含义未知
+
+
+
+#### RTSP 麦克风 音频 推流
+
+参考命令：`ffmpeg -f dshow -i audio="麦克风阵列 (Synaptics Audio)" -ab 192k -f rtsp "rtsp://106.55.41.100:8554/pc"`
+
+`audio=上步获取的设备名称`，亦可作`video=设备名称,audio=设备名称`
+
+`-ab 192k`比特率，`-ar 44100`采样率，`-ac 2`声道数
+
+
+
+
+
 
 
 
