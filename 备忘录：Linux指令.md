@@ -70,6 +70,16 @@ dummy参数含义未知
 
 
 
+### FFplay
+
+#### 无缓存播放
+
+`ffplay -fflags nobuffer -x 640 %addr%`
+
+-x（或-y）指定窗口大小，若只指定一个则会自动匹配。
+
+
+
 ### Bash 窗口快捷键
 
 #### 移动光标
